@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.garbagesorting">
+    <!-- 连接网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 文件读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序读取或写入系统设置 -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" /> <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".BaiduMap.DemoAppLication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_appname"
+        android:label="智能垃圾分类"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GarbageSorting"
+        tools:replace="android:label">
+        <activity android:name=".ForgetActivity"></activity>
+        <activity android:name=".BaiduMap.CheckPermissionsActivity" /> <!-- 声明service组件 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" /> <!-- AK鉴权 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="pjPZZpPsZmEhluUtOPiG3t0u32tSlsHy" />
+
+        <activity android:name=".BaiduMap.WNaviGuideActivity" />
+        <activity android:name=".BaiduMap.BNaviGuideActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SearchList" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".FindActivity" />
+        <activity android:name=".person.IntegralList"/>
+        <activity android:name=".person.RewardList"/>
+        <activity android:name=".person.CollectionList"/>
+        <activity android:name=".person.FollowList"/>
+        <activity android:name=".person.Visit"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 此文件为sdk内置ui所需
+资源缺失会导致sdk部分功能无法正常使用
+参考讯飞安卓sdk的readme文档-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/ifly_mnotice_image_container"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

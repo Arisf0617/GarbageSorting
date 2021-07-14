@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/shurukuang2_halfcircle"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/shurukuang1_whitecircle" >
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/cardview_dark_background"
+                android:background="#00FFFFFF"
+                android:hint="请搜索..."
+                android:textSize="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_search_24" />
+
+            <LinearLayout
+                android:id="@+id/line_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shurukuang3_botton"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_camera" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="拍照搜索"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/line_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="188dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shurukuang3_botton"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_voice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="语音识别"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_pic"
+
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:src="@mipmap/ic_appname" />
+
+
+    <android.widget.Button
+        android:layout_marginTop="140dp"
+        android:id="@+id/btn_hidden"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+</FrameLayout>

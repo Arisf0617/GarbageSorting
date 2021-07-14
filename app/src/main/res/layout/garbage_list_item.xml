@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/search_list_item"
+        >
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_head"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/head"/>
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_marginLeft="5dp"
+                android:layout_width="160dp"
+                android:text="name"
+                style="@style/MyListText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_note"
+                style="@style/MyListText"
+                android:layout_width="130dp"
+                android:maxLines="2"
+                android:text="note" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_garbage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/food"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/item_id"
+        android:text="id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
