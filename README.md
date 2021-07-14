@@ -1,2 +1,3 @@
 # GarbageSorting
 垃圾识别分类软件
+使用了百度和讯飞的SDK进行语音输入和图像识别，数据使用MySQL存储
