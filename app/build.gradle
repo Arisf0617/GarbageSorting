@@ -5,8 +5,8 @@ plugins {
 apply plugin: 'com.mob.sdk'
 // 在MobSDK的扩展中注册SMSSDK的相关信息
 MobSDK {
-    appKey "332928a274a3d"
-    appSecret "4b493424da57ddd72185382983bbfb40"
+    appKey "123"
+    appSecret "123"
     SMSSDK {}
 }
 
